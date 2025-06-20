@@ -1,0 +1,55 @@
+body{
+    background: var(--lighter-bg);
+    color: var(--white-text);
+}
+
+header{
+    background: var(--darker-bg);
+}
+
+.agendamentos-link{
+    background: var(--radial-gold-bg);
+}
+
+.bi{
+    color: var(--gold);
+}
+
+.floating-box{
+    background: var(--darker-bg);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 60px;
+    border-radius: var(--border-radius);
+}
+
+hr.short{
+    width: 100px;
+    margin: auto;
+}
+
+.acting-card{
+    width: 300px;
+    background: var(--darker-bg);
+}
+
+.services-container{
+    background: url('../img/justice_bg.png');
+}
+
+img{
+    border-radius: var(--border-radius);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--title-font);
+    color: var(--white-text);
+}
+
+p{
+    font-family: var(--text-font);
+}
+
+.grey-text{
+    color: var(--grey-text);
+}
