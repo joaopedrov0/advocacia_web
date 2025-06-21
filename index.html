@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"
+        defer></script>
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./style/vars.css">
@@ -16,85 +20,105 @@
 
     <!-- Script -->
 </head>
+
 <body>
     <header class="p-3">
         <div class="container d-flex justify-content-between align-items-center">
             <a href="#" class="logo">
                 <img src="./img/logo.png" alt="logotipo">
             </a>
-            <a href="#" class="btn agendamentos-link">Meus agendamentos</a>
+            <a href="#" class="btn agendamentos-link"><i class="bi bi-bookmark"></i>Meus agendamentos</a>
         </div>
     </header>
 
-    <div class="container-md floating-box">
-        <div class="row align-items-center justify-content-center">
-            <div class="col-md-5 d-flex justify-content-end ">
-                <img src="./img/advogado.png" alt="advogado" class="img-fluid">
-            </div>
-            <div class="col-md-7">
-                <h1>Dr. Sérgio Perez Meneguez</h1>
-                <h2>Especialista em Direito Trabalhista - OAB/SP 000-000</h2>
+    <div class="container bg-red"></div>
+
+    <div class="floating-box info_card d-flex align-items-center">
+        <!-- <div class="row align-items-center justify-content-center"> -->
+        <div class="">
+            <img src="./img/advogado.png" alt="advogado" class="img-fluid">
+        </div>
+        <div class="m-md-5 m-2">
+            <h2>Dr. Sérgio Perez Meneguez</h2>
+            <h3>Especialista em Direito Trabalhista - OAB/SP 000-000</h3>
+            <div class="contact">
                 <p><i class="bi bi-telephone"></i>(11) 99923-2321</p>
                 <p><i class="bi bi-envelope"></i>adv.sergiomeneguez@gmail.com</p>
                 <p><i class="bi bi-geo-alt"></i>Av. Alameda Góes, 129, Barueri - SP</p>
             </div>
         </div>
+        <!-- </div> -->
     </div>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <h2>Há 8 anos em prol da defesa do trabalhador brasileiro</h2>
+    <section class="history dark-bg">
+        <div class="container p-md-5 p-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center">Há 8 anos em prol da defesa do trabalhador brasileiro</h2>
+                </div>
+            </div>
+            <hr class="short mt-2 mb-3">
+            <div class="row">
+                <div class="col-md-7">
+                    <p>Com uma trajetória sólida e compromisso com os direitos dos trabalhadores, o Advogado trabalhista
+                        em Barueri - Dr. Sérgio Perez Meneguez é uma referência no Direito Trabalhista na região. Sua
+                        atuação busca garantir justiça e proteger aqueles que enfrentam desafios no ambiente de
+                        trabalho. Com experiência prática e teórica, Dr. Sérgio adota uma abordagem estratégica e
+                        empática, oferecendo segurança e confiança aos seus clientes.</p>
+                    <p>Seu trabalho como Advogado Trabalhista em São Paulo reflete respeito pelas leis trabalhistas e
+                        pelo papel fundamental dos trabalhadores na construção do país. Seja em atendimentos individuais
+                        ou grandes causas coletivas, Dr. Sérgio segue firme na defesa dos trabalhadores brasileiros.</p>
+                </div>
+                <div class="col-md-5 d-flex justify-content-center justify-content-md-start">
+                    <img src="./img/advogado.png" alt="advogado" class="img-fluid">
+                </div>
             </div>
         </div>
-        <hr class="short">
-        <div class="row">
-            <div class="col-md-7">
-                <p>Com uma trajetória sólida e compromisso com os direitos dos trabalhadores, o Advogado trabalhista em Barueri - Dr. Sérgio Perez Meneguez é uma referência no Direito Trabalhista na região. Sua atuação busca garantir justiça e proteger aqueles que enfrentam desafios no ambiente de trabalho. Com experiência prática e teórica, Dr. Sérgio adota uma abordagem estratégica e empática, oferecendo segurança e confiança aos seus clientes.</p>
-                <p>Seu trabalho como Advogado Trabalhista em São Paulo reflete respeito pelas leis trabalhistas e pelo papel fundamental dos trabalhadores na construção do país. Seja em atendimentos individuais ou grandes causas coletivas, Dr. Sérgio segue firme na defesa dos trabalhadores brasileiros.</p>
-            </div>
-            <div class="col-md-5">
-                <img src="./img/advogado.png" alt="advogado" class="img-fluid">
-            </div>
-        </div>
-    </div>
+    </section>
 
-    <div class="container-fluid services-container">
-        <h2>Principais Serviços</h2>
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                <div class="acting-card">
-                    <img src="./img/aposentadoria.png" alt="aposentadoria">
-                    <h4>Aposentadoria</h4>
-                    <p>Descrição do que seria o serviço de aposentadoria, Descrição do que seria o serviço de aposentadoria, Descrição do que seria o serviço de aposentadoria...</p>
+    <section class="services p-md-5 p-3">
+        <div class="container">
+            <h2>Principais Serviços</h2>
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item d-flex justify-content-center active">
+                        <div class="acting-card">
+                            <img src="./img/aposentadoria.png" alt="aposentadoria">
+                            <h4>Aposentadoria</h4>
+                            <p>Descrição do que seria o serviço de aposentadoria, Descrição do que seria o serviço de
+                                aposentadoria, Descrição do que seria o serviço de aposentadoria...</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item d-flex justify-content-center">
+                        <div class="acting-card">
+                            <img src="./img/aposentadoria.png" alt="aposentadoria">
+                            <h4>Aposentadoria</h4>
+                            <p>Descrição do que seria o serviço de aposentadoria, Descrição do que seria o serviço de
+                                aposentadoria, Descrição do que seria o serviço de aposentadoria...</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item d-flex justify-content-center">
+                        <div class="acting-card">
+                            <img src="./img/aposentadoria.png" alt="aposentadoria">
+                            <h4>Aposentadoria</h4>
+                            <p>Descrição do que seria o serviço de aposentadoria, Descrição do que seria o serviço de
+                                aposentadoria, Descrição do que seria o serviço de aposentadoria...</p>
+                        </div>
+                    </div>
                 </div>
-                </div>
-                <div class="carousel-item">
-                <div class="acting-card">
-                    <img src="./img/aposentadoria.png" alt="aposentadoria">
-                    <h4>Aposentadoria</h4>
-                    <p>Descrição do que seria o serviço de aposentadoria, Descrição do que seria o serviço de aposentadoria, Descrição do que seria o serviço de aposentadoria...</p>
-                </div>
-                </div>
-                <div class="carousel-item">
-                <div class="acting-card">
-                    <img src="./img/aposentadoria.png" alt="aposentadoria">
-                    <h4>Aposentadoria</h4>
-                    <p>Descrição do que seria o serviço de aposentadoria, Descrição do que seria o serviço de aposentadoria, Descrição do que seria o serviço de aposentadoria...</p>
-                </div>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-            </div>
-    </div>
+        </div>
+    </section>
 
     <div class="container floating-box">
         <h2>Agende sua consulta</h2>
@@ -113,4 +137,5 @@
     </div>
 
 </body>
+
 </html>

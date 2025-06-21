@@ -9,6 +9,11 @@ header{
 
 .agendamentos-link{
     background: var(--radial-gold-bg);
+    i{
+        color: var(--darker-bg);
+        font-weight: bold;
+        margin-right: 0.5rem;
+    }
 }
 
 .bi{
@@ -23,6 +28,12 @@ header{
     border-radius: var(--border-radius);
 }
 
+hr{
+    /* border-color: ; */
+    border-top: 1px solid var(--gold);
+    opacity: 1;
+}
+
 hr.short{
     width: 100px;
     margin: auto;
@@ -33,9 +44,17 @@ hr.short{
     background: var(--darker-bg);
 }
 
-.services-container{
+section.services{
+    text-align: center;
     background: url('../img/justice_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+/* .carousel-item{
+    display: flex;
+    justify-content: center;
+} */
 
 img{
     border-radius: var(--border-radius);
@@ -52,4 +71,52 @@ p{
 
 .grey-text{
     color: var(--grey-text);
+}
+
+.dark-bg{
+    background: var(--darker-bg);
+}
+
+.acting-card{
+    border-radius: var(--border-radius);
+    padding: 2rem;
+}
+
+.info_card{
+    width: clamp(300px, 80vw, 960px);
+    margin-left: auto;
+    margin-right: auto;
+    
+    h2{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 1rem;
+        color: var(--gold);
+    }
+    p{
+        color: var(--grey-text);
+    }
+    .contact{
+        p{
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+        i{
+            font-size: var(--small-icon);
+            margin-right: 1rem;
+            font-weight: 600;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .info_card{
+        flex-direction: column;
+        text-align: center;
+    }
+    .floating-box{
+        padding: 20px;
+    }
 }
