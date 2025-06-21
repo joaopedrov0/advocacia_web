@@ -3,9 +3,12 @@
 :root{
     --darker-bg:        #2A2A2A;
     --lighter-bg:       #3A3A3A;
+    --grey-bg:          #575757;
     --radial-gold-bg:   radial-gradient(circle,rgba(213, 170, 109, 1) 46%, rgba(199, 179, 112, 1) 100%);
+    --darker-text:        #2A2A2A;
     --white-text:       #FFFFFF;
     --grey-text:        #A2A2A2;
+    --light-grey-text:  #B3B3B3;
     --border-radius:    6px;
     --title-font:       'EB Garamond';
     --text-font:        'Crimson Text';
