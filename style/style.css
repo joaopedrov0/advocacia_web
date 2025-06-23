@@ -121,6 +121,21 @@ footer iframe{
     border-radius: var(--border-radius);
 }
 
+.modal-content{
+    background: var(--darker-bg);
+    font-family: var(--interface-text);
+    color: var(--white-text);
+
+    .modal-header .btn-close{
+        --bs-btn-close-color: var(--white-text);
+    }
+
+    .btn.btn-primary{
+        background: var(--radial-gold-bg);
+        border: none;
+    }
+}
+
 .form-area{
     text-align: center;
     h2{
@@ -159,6 +174,33 @@ footer iframe{
             font-weight: 600;
         }
     }
+}
+
+.toast-container .toast-header i.bi{
+    font-size: var(--medium-icon);
+}
+
+.agendamento-card{
+    width: 100%;
+    background: var(--darker-bg);
+    border-radius: var(--border-radius);
+    position: relative;
+    font-family: var(--interface-text);
+}
+
+.edit-btn{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 5px;
+}
+/* 
+.scheduling-field{
+    df
+} */
+
+.saudacao{
+    margin: 0;
 }
 
 @media screen and (max-width: 1200px){
