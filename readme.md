@@ -1,5 +1,8 @@
 # Sistema Web para Escritório de Advocacia
 
+## Wireframe da aplicação web
+https://www.figma.com/design/nG4zBBpMe17MKRkKJ129Y0/Wireframe---Agendamentos-Jur%C3%ADdicos?node-id=10-3&t=XNrsENWHjx8x2zp9-1
+
 ## O sistema
 
 ...funcionalidades
