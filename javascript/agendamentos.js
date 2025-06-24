@@ -2,7 +2,20 @@ const agendamentoArea = document.querySelector(".agendamentos")
 const editForm = document.querySelector("#editForm")
 const editModal = new bootstrap.Modal(document.querySelector("#editModal"))
 const deleteBtn = document.querySelector(".delete-btn")
+const editAccountModal = new bootstrap.Modal(document.querySelector("#editUsuario"))
+const accountForm = document.querySelector("#accountForm")
 
+accountForm.addEventListener("submit", (e) => {
+    e.preventDefault()
+    editUsuario()
+})
+
+
+
+function renderQuantidade(qtd){
+    const quantidade = document.querySelector(".quantidade-agendamentos")
+    quantidade.innerText = `Agendamentos salvos: ${qtd}`
+}
 
 editForm.addEventListener("submit", (e) => {
     e.preventDefault()
@@ -10,8 +23,11 @@ editForm.addEventListener("submit", (e) => {
     editAgendamento(indice)
 })
 
-const saudacao = document.querySelector(".saudacao")
-saudacao.innerText = `Olá ${recuperaUsuarioLogado().nome}!`
+function renderizaSaudacao(){
+    const saudacao = document.querySelector(".saudacao")
+    saudacao.innerText = `Olá ${recuperaUsuarioLogado().nome}!`
+}
+renderizaSaudacao()
 
 function renderAgendamentos(){
     // const email = recuperaUsuarioLogado().email
@@ -19,7 +35,7 @@ function renderAgendamentos(){
     let agendamentos = recuperaUsuarioLogado().agendamentos
     temp = ""
 
-    
+    renderQuantidade(agendamentos.length)
 
     for (let indice in agendamentos) {
         console.log(indice)
@@ -110,4 +126,28 @@ function modalEdit(indice){
     document.querySelector("#subject").value = agendamento.subject
 
     exibeModal(editModal)
+}
+
+function usuarioModal(){
+    const usuario = recuperaUsuarioLogado()
+    document.querySelector("#name").value = usuario.nome
+    document.querySelector("#email").value = recuperaEmailLogado()
+    exibeModal(editAccountModal)
+}
+
+function editUsuario(){
+    const nome = document.querySelector("#name").value
+    const data = getData()
+    data[recuperaEmailLogado()].nome = nome
+    saveData(data)
+    ocultaModal(editAccountModal)
+    renderizaSaudacao()
+}
+
+function deleteUsuario(){
+    const data = getData()
+    delete data[recuperaEmailLogado()]
+    saveData(data)
+    logout()
+    redirect('index.html')
 }

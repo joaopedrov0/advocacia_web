@@ -25,6 +25,38 @@
 
 <body>
 
+    <div class="modal fade" id="editUsuario" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true"
+        data-bs-theme="dark">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Edição Perfil</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="accountForm">
+                        <label for="agendamento-id"></label>
+                        <input name="agendamento-id" type="number" id="agendamento-id" hidden>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nome</label>
+                            <input name="name" type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input name="email" type="email" class="form-control" id="email" readonly>
+                        </div>
+                        <p class="quantidade-agendamentos"></p>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" onclick="deleteUsuario()">Deletar conta</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="submit" class="btn btn-primary" form="accountForm">Salvar alterações</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Modal -->
 
     <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true"
@@ -67,7 +99,12 @@
             <a href="./index.html" class="logo">
                 <img src="./img/logo.png" alt="logotipo">
             </a>
-            <p class="saudacao"></p>
+            <nav class="d-flex gap-3 align-items-center">
+                <p class="saudacao"></p>
+                <button class="btn" onclick="usuarioModal()">
+                    <i class="bi bi-person-circle"></i>
+                </button>
+            </nav>
         </div>
     </header>
 
@@ -75,7 +112,7 @@
         <div class="container">
             <div class="h2 text-center mb-4 mt-5" style="font-family: var(--title-font);">Meus agendamentos</div>
             <div class="agendamentos">
-                
+                <p class="text-center">Você ainda não fez nenhum agendamento.</p>
             </div>
         </div>
     </main>

@@ -73,7 +73,7 @@ function getData(){
 
 function logout(){
     window.sessionStorage.removeItem("login")
-    toastMessage("Logout realizado com sucesso!")
+    // toastMessage("Logout realizado com sucesso!")
 }
 
 
