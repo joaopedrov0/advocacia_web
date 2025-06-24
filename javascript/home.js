@@ -95,8 +95,6 @@ function agendamentoProxy(){
     
     // Não logado?
         // Login
-
-    
 }
 
 function salvarAgendamento(email){
@@ -118,9 +116,6 @@ function salvarAgendamento(email){
         "time": time,
         "subject": subject
     })
-
-    // data[userDict.email] = userDict
-
     saveData(data)
 
     toastMessage("Agendamento realizado com sucesso!")

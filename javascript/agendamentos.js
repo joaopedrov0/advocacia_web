@@ -30,8 +30,6 @@ function renderizaSaudacao(){
 renderizaSaudacao()
 
 function renderAgendamentos(){
-    // const email = recuperaUsuarioLogado().email
-
     let agendamentos = recuperaUsuarioLogado().agendamentos
     temp = ""
 
@@ -86,7 +84,6 @@ function buildAgendamentoCard(agendamento, indice){
 renderAgendamentos()
 
 function editAgendamento(indice){
-    console.log(`Tentando editar ${indice}`)
     const date = document.querySelector("#date").value
     const time = document.querySelector("#time").value
     const subject = document.querySelector("#subject").value

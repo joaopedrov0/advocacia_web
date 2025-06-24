@@ -3,8 +3,6 @@ if (!window.localStorage.getItem("users")){
     window.localStorage.setItem("users", JSON.stringify({}))
 }
 
-
-
 function exibeModal(elementoModal){
     elementoModal.show()
 }
@@ -12,7 +10,6 @@ function exibeModal(elementoModal){
 function ocultaModal(elementoModal){
     elementoModal.hide()
 }
-
 
 const logoutBtn = document.querySelector(".logout-btn")
 if (!verificaLogin()){
